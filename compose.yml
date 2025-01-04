@@ -1,11 +1,16 @@
-version: '3'
+# Usando uma imagem base do Apache com suporte a PHP
+FROM php:7.4-apache
 
-services:
-  portfolio:
-    build: .
-    ports:
-      - "8080:80"  # Mapeia a porta 80 do contêiner para a porta 8080 na sua máquina
-    volumes:
-      - ./html:/usr/share/nginx/html  # Serve a pasta html no Nginx
-      - ./css:/usr/share/nginx/html/css  # Serve a pasta css no Nginx
-    restart: always
+RUN a2enmod rewrite
+
+RUN docker-php-ext-install mysqli
+
+COPY . /var/www/html
+
+EXPOSE 8080
+
+# Mudando o Apache para ouvir na porta 8080
+RUN echo "Listen 8080" >> /etc/apache2/ports.conf
+
+# Defina o comando para iniciar o Apache no modo em segundo plano
+CMD ["apache2-foreground"]
