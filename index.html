@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Mylena Torquato</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,700..900,100&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ícone de estrela reutilizável -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 0C12 7 17 12 24 12C17 12 12 17 12 24C12 17 7 12 0 12C7 12 12 7 12 0Z"/>
+    </symbol>
+  </svg>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="top">
+    <div class="hero-green"></div>
+    <div class="hero-black"></div>
+
+    <div class="hero-words" aria-hidden="true">
+      <span class="w-solid">PORTFOLIO</span>
+      <span class="w-outline">PORTFOLIO</span>
+      <span class="w-outline">PORTFOLIO</span>
+      <span class="w-outline">PORTFOLIO</span>
+    </div>
+    <h1 class="sr-only">Portfolio</h1>
+
+    <div class="hero-photo">
+      <img src="assets/vaca.jpg" alt="foto">
+      <svg class="silhouette" viewBox="0 0 200 260" aria-hidden="true">
+        <circle cx="100" cy="85" r="48"/>
+        <path d="M10 260c0-60 40-95 90-95s90 35 90 95z"/>
+      </svg>
+    </div>
+
+    <svg class="star star-lg" aria-hidden="true"><use href="#star"/></svg>
+    <svg class="star star-sm" aria-hidden="true"><use href="#star"/></svg>
+    <svg class="star star-md" aria-hidden="true"><use href="#star"/></svg>
+
+    <ul class="hero-links">
+      <li>GIT: /mylenatorquato</li>
+      <li>LI: /mylena-torquato</li>
+    </ul>
+
+    <p class="hero-note">Infrastructure analyst aiming to be a DevOps Engineer </p>
+
+    <a href="#about" class="scroll-btn" data-scroll>Scroll<br>down</a>
+  </header>
+
+  <!-- ================= NAV ================= -->
+  <nav class="nav" aria-label="Principal">
+    <a href="#top" class="logo" data-scroll>
+      <svg class="star" aria-hidden="true"><use href="#star"/></svg>
+      About me!!
+    </a>
+    <div class="nav-links">
+      <a href="#about" data-scroll>About me</a>
+      <a href="#work" data-scroll>Work</a>
+      <a href="#contact" class="pill pill-yellow" data-scroll>Get in touch!</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2 class="display">Hello,<br>I’m Mylena !</h2>
+        <p>I’m currently working as an Infrastructure Analyst while building my skills in DevOps, CI/CD, Kubernetes, and cloud computing. I’m passionate about learning and exploring these technologies. You can find out more about my experience on LinkedIn below!</p>
+        <a class="search-pill" href="https://www.linkedin.com/in/mylena-torquato/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          linkedin.com/in/mylena-torquato/
+        </a>
+      </div>
+
+      <div class="about-visual">
+        <div class="portrait">
+          <span class="portrait-circle"></span>
+          <img src="assets/auau.jpg" alt="cachorro"> 
+            <circle cx="100" cy="85" r="48"/>
+            <path d="M10 260c0-60 40-95 90-95s90 35 90 95z"/>
+          </svg>
+        </div>
+
+        <div class="contact" id="contact">
+          <h3 class="display">Contact</h3>
+          <ul>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12zm0-9a3 3 0 110-6 3 3 0 010 6z"/></svg>
+              Porto Alegre - RS
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zm1.5 1.5l7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              mytorquato@gmail.com
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section class="resume" id="work">
+      <div class="resume-left">
+        <h2 class="heading yellow">Education</h2>
+        <ol class="timeline timeline-light">
+          <li>
+            <svg class="star" aria-hidden="true"><use href="#star"/></svg>
+            <time>2023-2024</time>
+            <div><strong>Computer Networks, SENAI</strong><span>Studied Linux and Windows server administration, advanced network administration, and cloud computing.</span></div>
+          </li>
+          <li>
+            <svg class="star" aria-hidden="true"><use href="#star"/></svg>
+            <time>2026-2029</time>
+            <div><strong>Computer Science, FIAP</strong><span>Focused on artificial intelligence, software development, computer hardware and electronics.
+          </li>
+        </ol>
+
+        <div class="experience">
+          <h2 class="heading">Experience</h2>
+          <ol class="timeline timeline-dark">
+            <li>
+              <svg class="star" aria-hidden="true"><use href="#star"/></svg>
+              <time>2025</time>
+              <div><strong>Dry Telecom - Computer Support Technician </strong><span>Maintained and upgraded computers, improved network coverage by deploying mesh access points, and worked with security cameras, Active Directory servers, and NAS systems.</span></div>
+            </li>
+            <li>
+              <svg class="star" aria-hidden="true"><use href="#star"/></svg>
+              <time>2025-Now</time>
+              <div><strong>Selbetti - Infraestructure Analyst</strong><span>Monitor servers and network devices using Zabbix, administer Linux servers, manage backups with Veeam and Bacula, and work with vCenter and Zabbix administration.</span></div>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+
+      <div class="resume-right">
+        <div class="outline-words" aria-hidden="true">
+          <span>RESUME</span><span>RESUME</span><span>RESUME</span>
+        </div>
+
+        <h2 class="heading yellow skills-title">Technical skills</h2>
+
+        <div class="skills-grid">
+          <div>
+            <h3 class="subheading">Coding Skills</h3>
+            <ul class="badges">
+              <li>JS</li><li>HCL</li><li>SQL</li><li>Python</li><li>YAML</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="subheading">Technologies</h3>
+            <p class="small">Working/studying:</p>
+            <ul class="code-list">
+              <li>Zabbix</li><li>Grafana</li><li>Jenkins</li><li>Kubernetes</li><li>AWS</li><li>Prometheus</li><li>Git</li><li>Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXTRA ================= -->
+    <section class="extra">
+      <div class="extra-col">
+        <h2 class="heading">Language</h2>
+        <ul class="langs">
+          <li><strong>Português</strong><span>Native</span></li>
+          <li><strong>English</strong><span>Fluent</span></li>
+        </ul>
+      </div>
+
+      <div class="extra-col">
+        <h2 class="heading">Hobbies &amp; Interests</h2>
+        <ul class="hobbies">
+          <li class="hobby"><svg class="star" aria-hidden="true"><use href="#star"/></svg><span>Gaming</span></li>
+          <li class="hobby"><svg class="star" aria-hidden="true"><use href="#star"/></svg><span>Lego</span></li>
+          <li class="hobby"><svg class="star" aria-hidden="true"><use href="#star"/></svg><span>Cinema</span></li>
+          <li class="hobby"><svg class="star" aria-hidden="true"><use href="#star"/></svg><span>Cooking</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
